@@ -40,7 +40,16 @@ public class Dentista extends Persona{
 			salario = 50000;
 		}
 	}//cierre calcularSalario
-		
+	
+	
+	@Override
+	public String toString() {
+		return "Dentista [especialidad=" + especialidad + ", cedula=" + cedula + ", consultorioAsignado="
+				+ consultorioAsignado + ", experiencia=" + experiencia + ", turno=" + turno + ", salario=" + salario
+				+ ", nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", telefono=" + telefono
+				+ ", email=" + email + "]";
+	}
+
 	void imprimirInfoDentista() {
 		System.out.println("La especialidad es: "+especialidad);
 		System.out.println("El salario es: "+ salario);
